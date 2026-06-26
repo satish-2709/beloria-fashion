@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BELORIA | Wear Your Confidence</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Product Popup -->
+
+ <div class="popup" id="popup">
+
+    <div class="popup-box">
+
+        <span class="close" onclick="closePopup()">&times;</span>
+
+        <img id="popupImage" src="" alt="">
+
+        <h2 id="popupTitle"></h2>
+
+        <p>Price : <strong>₹1499</strong></p>
+
+        <label>Size</label>
+
+        <select id="size">
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+        </select>
+
+        <label>Quantity</label>
+
+        <input type="number" id="qty" value="1" min="1">
+
+        <button onclick="orderWhatsapp()">
+            Order on WhatsApp
+        </button>
+
+    </div>
+
+ </div>
+
+    <!-- Navbar -->
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+
+             <img src="images/logo.png" alt="BELORIA Logo">
+
+             <div class="brand">
+
+             <h2>BELORIA</h2>
+
+             <p>Wear Your Confidence</p>
+
+              </div>
+
+            </div>
+
+            <ul>
+
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <span>Wear Your Confidence ✨</span>
+
+            <h1>Discover Your Style.<br>Define Your Identity.</h1>
+
+            <p>
+                Premium Fashion | Elegant Designs | Everyday Comfort
+            </p>
+
+            <a href="#">Shop Collection</a>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=800" alt="Hero">
+
+        </div>
+
+    </section>
+    <section class="collections">
+
+     <h2>Our Collections</h2>
+
+     <div class="collection-container">
+
+        <div class="collection-card">
+            <img src="images/product1.jpg" alt="">
+            <h3>Party Wear</h3>
+            <a href="#" class="explore-btn">Explore →</a>
+        </div>
+
+        <div class="collection-card">
+            <img src="images/product2.jpg" alt="">
+            <h3>Casual Wear</h3>
+        </div>
+
+        <div class="collection-card">
+            <img src="images/product3.jpg" alt="">
+            <h3>Ethnic Wear</h3>
+        </div>
+
+        <div class="collection-card">
+            <img src="images/product4.jpg" alt="">
+            <h3>Designer Collection</h3>
+        </div>
+
+     </div>
+
+    </section>
+    <section class="about" id="about">
+
+     <div class="about-container">
+
+        <div class="about-image">
+            <img src="images/product1.jpg" alt="About BELORIA">
+        </div>
+
+        <div class="about-content">
+
+            <span>ABOUT BELORIA</span>
+
+            <h2>Where Fashion Meets Confidence</h2>
+
+            <p>
+                Welcome to BELORIA — where fashion meets confidence.
+                Our collections are designed with a perfect blend of
+                modern trends, timeless elegance, and comfortable fabrics.
+
+                Every piece is thoughtfully created to help you express
+                your individuality and make every moment stylish.
+            </p>
+
+            <a href="#" class="about-btn">Explore Collection</a>
+
+        </div>
+
+      </div>
+
+    </section>
+    <section class="products">
+
+     <h2>Featured Products</h2>
+
+     <div class="product-container">
+
+        <div class="product-card">
+
+          <img src="images/product1.jpg">
+
+          <h3>Floral Dress</h3>
+
+          <p>Premium Women's Collection</p>
+
+          <button
+          class="whatsapp-btn"
+          onclick="openPopup('Floral Dress','images/product1.jpg')">
+          View Details
+         </button>
+
+        </div>
+
+        <div class="product-card">
+
+            <img src="images/product2.jpg" alt="Casual Wear">
+
+            <h3>Casual Wear</h3>
+
+            <p>Comfort Meets Style</p>
+
+            <button
+            class="whatsapp-btn"
+            onclick="openPopup('Casual Wear','images/product2.jpg')">
+            View Details
+            </button>
+
+        </div>
+
+        <div class="product-card">
+
+            <img src="images/product3.jpg" alt="Ethnic Wear">
+
+            <h3>Ethnic Wear</h3>
+
+            <p>Traditional & Elegant</p>
+
+            <button
+            class="whatsapp-btn"
+            onclick="openPopup('Ethnic Wear','images/product3.jpg')">
+            View Details
+            </button>
+
+        </div>
+
+     </div>
+
+    </section>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
